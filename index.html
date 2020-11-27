@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>B24 - Passbook</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+<!-- auth-header -->
+<header class="index-header">
+  <div class="index-header__content">
+    <div class="container d-flex align-items-center py-0 h-100">
+      <div class="logo mr-auto pb-1">
+        <img src="./img/sidebar/logo.svg" alt="Company Logo" width="120">
+      </div>
+      <a href="#" class="index-header__btn d-flex align-items-center h-100 px-4">
+        <i class="mdi mdi-account-plus-outline mr-3 size-23" aria-hidden="true"></i>
+        Регистрация
+      </a>
+      <a href="#" class="index-header__btn d-flex align-items-center h-100 px-4">
+        <i class="mdi mdi-exit-to-app mr-3 size-22" aria-hidden="true"></i>
+        Вход
+      </a>
+    </div>
+  </div>
+</header>      <main class="index-content">
+        <div class="index-content__wrap">
+<!-- Login page -->
+<div class="container">
+  <div class="card auth-card">
+    <div class="auth-card__title px-7 pt-5 pb-0 mb-5"> Авторизация </div>
+    <div class="card-body py-0">
+      <!-- Email -->
+      <div class="d-flex flex-column mb-4">
+        <label for="userEmail" class="auth-card--text px-0 mb-2"> E-mail: </label>
+        <input
+          class="auth-card__input"
+          id="userEmail"
+          required
+          placeholder="Введите e-mail"
+        >
+      </div>
+      <!-- Password -->
+      <div class="d-flex flex-column mb-5">
+        <label for="userPassword" class="auth-card--text px-0 mb-2"> Пароль: </label>
+        <input
+          class="auth-card__input"
+          id="userPassword"
+          type="password"
+          required
+          placeholder="Введите пароль"
+        >
+      </div>
+      <!-- Запомнить меня -->
+      <div class="d-flex align-items-center mb-5">
+        <label class="d-flex align-items-center mb-0">
+          <input type="checkbox" class="mr-2" />
+          <span class="auth-card--text"> Запомнить </span>
+        </label>
+        <!-- Забыли пароль -->
+        <a href="#" class="auth-card__link ml-auto"> Забыли пароль? </a>
+      </div>
+    </div>
+    <div class="card-body pb-8 pt-0">
+      <a class="auth__btn" href="#"> Войти </a>
+      <a class="auth__btn auth__btn--last" href="#"> Зарегистрироваться </a>
+    </div>
+  </div>
+</div></div>
+      </main>
+    </div>
+  </html>
